@@ -1,0 +1,11 @@
+:root {
+    --fuentePrincipal: font-family: 'Nerko One', cursive;
+}
+
+body {
+    background-color: #000;
+}
+
+.no-decoration {
+    text-decoration: none;
+}

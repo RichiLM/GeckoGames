@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <?php
     require('layouts/nav.php');
     ?>
+    <hr style="color: rgb(51, 255, 0); margin: 0;">
     <?php
     require('layouts/footer.php');
     ?>
