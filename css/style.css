@@ -1,5 +1,11 @@
+@font-face {
+    font-family: 'FuenteGecko';
+    src: url('../assets/fuente.ttf') format('truetype');
+}
+
+
 :root {
-    --fuentePrincipal: "Nerko One", cursive;
+    --fuentePrincipal: 'FuenteGecko', "Nerko One", cursive;
     --colorPrincipal: rgb(51, 255, 0);
 }
 
