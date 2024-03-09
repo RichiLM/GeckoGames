@@ -1,5 +1,5 @@
 <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="container-fluid my-5" style="padding: 0;">
+<div class="container-fluid mt-5" style="padding: 0;">
 
     <!-- Footer -->
     <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">

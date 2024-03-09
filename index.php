@@ -17,7 +17,6 @@
     <?php
     require('layouts/nav.php');
     ?>
-    <hr style="color: rgb(51, 255, 0); margin: 0;">
     <div class="container mt-4">
         <div class="row text-center mb-5">
             <div class="col-sm col-md-6 d-flex align-items-center">
