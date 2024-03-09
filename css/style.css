@@ -1,5 +1,5 @@
 :root {
-    --fuentePrincipal: 'Nerko One', cursive;
+    --fuentePrincipal: "Nerko One", cursive;
     --colorPrincipal: rgb(51, 255, 0);
 }
 
@@ -13,5 +13,5 @@ body {
 
 .titulo {
     font-family: var(--fuentePrincipal);
-    color: var(--colorPrincipal);;
+    color: var(--colorPrincipal);
 }
