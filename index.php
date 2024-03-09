@@ -18,6 +18,32 @@
     require('layouts/nav.php');
     ?>
     <hr style="color: rgb(51, 255, 0); margin: 0;">
+    <div class="container mt-4">
+        <div class="row text-center mb-5">
+            <div class="col-sm col-md-6 d-flex align-items-center">
+                <h2 class="titulo display-1 text-uppercase my-auto">Partes Modulares</h2>
+            </div>
+            <div class="col-sm col-md-6">
+                <img class="img-fluid" src="assets/g1.png" alt="Imagen1">
+            </div>
+        </div>
+        <div class="row text-center mb-5">
+            <div class="col-sm col-md-6">
+                <img class="img-fluid" src="assets/g2.png" alt="Imagen2">
+            </div>
+            <div class="col-sm col-md-6 d-flex align-items-center">
+                <h2 class="titulo display-1 text-uppercase my-auto">Múltiples combinaciones</h2>
+            </div>
+        </div>
+        <div class="row text-center mb-5">
+            <div class="col-sm col-md-6 d-flex align-items-center">
+                <h2 class="titulo display-1 text-uppercase my-auto">Personalidad</h2>
+            </div>
+            <div class="col-sm col-md-6">
+                <img class="img-fluid" src="assets/g3.png" alt="Imagen3">
+            </div>
+        </div>
+    </div>
     <?php
     require('layouts/footer.php');
     ?>
