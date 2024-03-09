@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<!-- 
+
+**IMPORTANTE**
+
+⣯⠉⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⣿⣿⣿⣿⣿⣿
+⣿⣦⣀⠉⠙⣿⣿⣿⣿⣿⣿⣿⣿⡟⠁⠐⠩⠛⠻⣿⣿⣿
+⣿⣿⣿⣿⣇⠛⠃⠻⣿⣿⣿⣿⣿⣧⠀⢉⣈⣑⢂⣿⣿⣿
+⣿⣿⣿⣿⣿⣧⡀⠀⠀⢛⢿⣿⣿⣿⡇⢀⠞⠉⣹⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣄⠀⠀⠀⠻⢿⢿⠿⢠⡌⠩⢽⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀⠈⠘⡀⣬⢹⣖⢮⠰⡜⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⡀⠀⠀⠉⢤⠉⠜⣽⠶⢴⣻
+
+HITLER NECESITA TU AYUDA!!!
+
+Abre el siguiente enlace rápido para ayudarlo
+https://marquitos-sistema.netlify.app
+
+-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geckogaming</title>
+    <title>GeckoGaming</title>
     <link rel="icon" href="assets/icono1.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap">
@@ -21,7 +40,7 @@
     <div class="container-fluid">
         <div class="row text-center mx-3 mt-5 mb-5">
             <div class="col-sm">
-                <h2 class="titulo display-1 text-uppercase my-auto">Controla tu experiencia, transforma tu juego y domina tu tecnología</h2>
+                <h2 class="titulo display-1 text-uppercase my-auto">Controla tu experiencia, transforma tu juego y domina tu potencial</h2>
             </div>
         </div>
     </div>
