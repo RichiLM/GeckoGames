@@ -38,35 +38,84 @@ https://marquitos-sistema.netlify.app
     require('layouts/nav.php');
     ?>
     <div class="container-fluid">
+            <div class="col-sm">
+                <img src="assets/click.jpg" class="d-block w-100" alt="...">
+            </div>
+        
+    </div>
+    <div class="container-fluid">
         <div class="row text-center mx-3 mt-5 mb-5">
             <div class="col-sm">
                 <h2 class="titulo display-1 text-uppercase my-auto">Controla tu experiencia, transforma tu juego y domina tu potencial</h2>
             </div>
         </div>
     </div>
+    
+    <div class="container-fluid">
+            <div class="col-sm">
+                <img src="assets/gnc.jpg" class="d-block w-100" alt="...">
+            </div>
+        
+    </div>
     <div class="container mt-4">
         <div class="row text-center mb-5">
             <div class="col-sm col-md-6 d-flex align-items-center justify-content-center">
-                <h2 class="titulo display-1 text-uppercase my-auto">Partes Modulares</h2>
+                <h2 class="titulo display-1 text-uppercase my-auto">Desempeño superior</h2>
             </div>
             <div class="col-sm col-md-6">
-                <img class="img-fluid" src="assets/g1.png" alt="Imagen1">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/gc3.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/gc4.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/gc5.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
             </div>
         </div>
         <div class="row text-center mb-5">
             <div class="col-sm col-md-6">
-                <img class="img-fluid" src="assets/g2.png" alt="Imagen2">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/gc6.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/gc7.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/gc8.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
             </div>
             <div class="col-sm col-md-6 d-flex align-items-center">
-                <h2 class="titulo display-1 text-uppercase my-auto">Múltiples combinaciones</h2>
+                <h2 class="titulo display-1 text-uppercase my-auto">Supera tus límites</h2>
             </div>
         </div>
         <div class="row text-center mb-5">
             <div class="col-sm col-md-6 d-flex align-items-center justify-content-center">
-                <h2 class="titulo display-1 text-uppercase my-auto">Personalidad</h2>
+                <h2 class="titulo display-1 text-uppercase my-auto">Juega a otro nivel</h2>
             </div>
             <div class="col-sm col-md-6">
-                <img class="img-fluid" src="assets/g3.png" alt="Imagen3">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/gc9.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/gc10.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/gc11.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
             </div>
         </div>
     </div>

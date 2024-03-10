@@ -21,3 +21,11 @@ body {
     font-family: var(--fuentePrincipal);
     color: var(--colorPrincipal);
 }
+
+.carousel-item img {
+    width: 100%; /* Mantenemos el ancho al 100% del contenedor */
+    height: auto; /* Mantenemos la proporción de aspecto */
+    max-width: 1000px; /* Establecemos un ancho máximo */
+    max-height: 1000px; /* Establecemos una altura máxima */
+}
+
