@@ -40,7 +40,7 @@ https://marquitos-sistema.netlify.app
 
 <body>
   <?php
-  require('layouts/nav.php');
+  require($ruta . 'layouts/nav.php');
   ?>
   <div class="container-fluid">
     <div class="row">
@@ -128,7 +128,7 @@ https://marquitos-sistema.netlify.app
     </div>
   </div>
   <?php
-  require('layouts/footer.php');
+  require($ruta .  'layouts/footer.php');
   ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

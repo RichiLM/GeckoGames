@@ -1,8 +1,10 @@
 <nav class="navbar navbar-expand-lg" style="background-color: black;">
     <div class="container-fluid" style="background-color: black;">
-        <img class="img-fluid mx-3" src="<?php echo $ruta . 'assets/logo1-bg.png'; ?>" alt="logo" width="50px">
+        <a href="<?php echo $ruta . 'index.php'; ?>">
+            <img class="img-fluid mx-3" src="<?php echo $ruta . 'assets/logo1-bg.png'; ?>" alt="logo" width="50px">
+        </a>
         <a class="navbar-brand" style="color: rgb(51, 255, 0); font-family: 'Nerko One', cursive; font-size: 27px;" href="<?php echo $ruta . 'index.php'; ?>">GECKOGAMING</a>
-        <button class="navbar-toggler" style="background-color: rgb(51, 255, 0);" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+        <button class="navbar-toggler" style="background-color: rgb(51, 255, 0);" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
