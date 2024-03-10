@@ -43,10 +43,11 @@ https://marquitos-sistema.netlify.app
   require('layouts/nav.php');
   ?>
   <div class="container-fluid">
-    <div class="col-sm">
-      <img src="assets/click.jpg" class="d-block w-100" alt="...">
+    <div class="row">
+      <div class="col-sm">
+        <img src="assets/click.jpg" class="d-block w-100" alt="...">
+      </div>
     </div>
-
   </div>
   <div class="container-fluid">
     <div class="row text-center mx-3 mt-5 mb-5">
