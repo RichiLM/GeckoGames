@@ -16,7 +16,7 @@
                     <a class="nav-link active" style="color: white; font-size: 22px;" aria-current="page" href="#">Carrito</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" style="color: white; font-size: 22px;" aria-current="page" href="#">Sobre Nosotros</a>
+                    <a class="nav-link active" style="color: white; font-size: 22px;" aria-current="page" href="<?php echo $ruta . 'components/nosotros.php'; ?>">Sobre Nosotros</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" style="color: rgb(51, 255, 0); font-size: 22px;" aria-current="page" href="#">Perfil</a>
