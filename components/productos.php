@@ -26,7 +26,7 @@ $ruta = '../';
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm">
-        <img src="../assets/GG1.jpg" class="d-block w-100" alt="...">
+        <img src="../assets/Poster/GG1.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
   </div>
@@ -35,7 +35,7 @@ $ruta = '../';
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
         <div class="card h-100">
-          <img src="../assets/gc3.png" class="card-img-top" alt="...">
+          <img src="../assets/Gabinetes/G1.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Gabinete GGC1</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -47,7 +47,7 @@ $ruta = '../';
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="../assets/gc4.png" class="card-img-top" alt="...">
+          <img src="../assets/Audifonos/A1.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Gecko Bass WW</h5>
             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -59,9 +59,9 @@ $ruta = '../';
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="../assets/gc5.png" class="card-img-top" alt="...">
+          <img src="../assets/Mouse/M1.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">GG Cooler AIO</h5>
+            <h5 class="card-title">GG One Click</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
           </div>
           <div class="card-footer">
@@ -71,9 +71,9 @@ $ruta = '../';
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="../assets/gc6.png" class="card-img-top" alt="...">
+          <img src="../assets/Teclados/T1.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Gabinete GGC2</h5>
+            <h5 class="card-title">Teclado GGK-1</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
           </div>
           <div class="card-footer">
@@ -83,9 +83,9 @@ $ruta = '../';
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="../assets/gc7.png" class="card-img-top" alt="...">
+          <img src="../assets/Controles/C1.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Mouse GG One Click</h5>
+            <h5 class="card-title">Control G-Super Light</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
           </div>
           <div class="card-footer">
@@ -95,9 +95,9 @@ $ruta = '../';
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="../assets/gc8.png" class="card-img-top" alt="...">
+          <img src="../assets/Mouse/M2.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Webcam Geecko Eyes V1</h5>
+            <h5 class="card-title">Mouse G-Light Speed</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
           </div>
           <div class="card-footer">
@@ -107,9 +107,9 @@ $ruta = '../';
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="../assets/gc9.png" class="card-img-top" alt="...">
+          <img src="../assets/Gabinetes/G2.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Silla Gecko Comfort T100</h5>
+            <h5 class="card-title">Gabinete G-Armor</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
           </div>
           <div class="card-footer">
@@ -119,7 +119,7 @@ $ruta = '../';
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="../assets/gc10.png" class="card-img-top" alt="...">
+          <img src="../assets/Teclados/T2.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Teclado GG Thunder B</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -131,7 +131,7 @@ $ruta = '../';
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="../assets/gc11.png" class="card-img-top" alt="...">
+          <img src="../assets/Teclados/T3.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Teclado GG Thunder W</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -143,9 +143,9 @@ $ruta = '../';
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="../assets/gc12.png" class="card-img-top" alt="...">
+          <img src="../assets/Controles/C2.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Teclado GG Rush W</h5>
+            <h5 class="card-title">Control GG Rush W</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
           </div>
           <div class="card-footer">
@@ -155,9 +155,9 @@ $ruta = '../';
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="../assets/gc13.png" class="card-img-top" alt="...">
+          <img src="../assets/Mouse/M3.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Teclado GG Rush B</h5>
+            <h5 class="card-title">Mouse G-203</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
           </div>
           <div class="card-footer">
@@ -167,9 +167,9 @@ $ruta = '../';
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="../assets/gc14.png" class="card-img-top" alt="...">
+          <img src="../assets/Gabinetes/G3.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Monitor Ragnarok GG27</h5>
+            <h5 class="card-title">Gabinete NiGGa</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
           </div>
           <div class="card-footer">

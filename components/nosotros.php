@@ -26,7 +26,7 @@ $ruta = '../';
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm">
-        <img src="../assets/somos.jpg" class="d-block w-100" alt="...">
+        <img src="../assets/Poster/somos.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
   </div>
