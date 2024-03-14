@@ -6,25 +6,6 @@ $ruta = '';
 <!DOCTYPE html>
 <html lang="es">
 
-<!-- 
-
-**IMPORTANTE**
-
-⣯⠉⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⣿⣿⣿⣿⣿⣿
-⣿⣦⣀⠉⠙⣿⣿⣿⣿⣿⣿⣿⣿⡟⠁⠐⠩⠛⠻⣿⣿⣿
-⣿⣿⣿⣿⣇⠛⠃⠻⣿⣿⣿⣿⣿⣧⠀⢉⣈⣑⢂⣿⣿⣿
-⣿⣿⣿⣿⣿⣧⡀⠀⠀⢛⢿⣿⣿⣿⡇⢀⠞⠉⣹⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣄⠀⠀⠀⠻⢿⢿⠿⢠⡌⠩⢽⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀⠈⠘⡀⣬⢹⣖⢮⠰⡜⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⡀⠀⠀⠉⢤⠉⠜⣽⠶⢴⣻
-
-HITLER NECESITA TU AYUDA!!!
-
-Abre el siguiente enlace rápido para ayudarlo
-https://marquitos-sistema.netlify.app
-
--->
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
