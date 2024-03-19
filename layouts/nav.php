@@ -19,7 +19,7 @@
                     <a class="nav-link active" style="color: white; font-size: 22px;" aria-current="page" href="<?php echo $ruta . 'components/nosotros.php'; ?>">Sobre Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" style="color: rgb(51, 255, 0); font-size: 22px;" aria-current="page" href="#">Perfil</a>
+                    <button class="nav-link active" style="color: rgb(51, 255, 0); font-size: 22px;" aria-current="page" data-bs-toggle="modal" data-bs-target="#modalIniciarSesion">Perfil</button>
                 </li>
             </ul>
             <form class="d-flex" role="search">
