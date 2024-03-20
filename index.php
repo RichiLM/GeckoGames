@@ -141,6 +141,7 @@ $ruta = '';
 		</a>
     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
     <button type="button" class="btn btn-primary" style="background-color:rgb(51, 255, 0); color: black;" type="submit">Iniciar sesión</button>
+    <p class="small pb-lg-2 me-lg-auto"><a class="text-white-50" href="#!">Crear cuenta</a></p>
 </div>
 
 

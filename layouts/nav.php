@@ -19,7 +19,10 @@
                     <a class="nav-link active" style="color: white; font-size: 22px;" aria-current="page" href="<?php echo $ruta . 'components/nosotros.php'; ?>">Sobre Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <button class="nav-link active" style="color: rgb(51, 255, 0); font-size: 22px;" aria-current="page" data-bs-toggle="modal" data-bs-target="#modalIniciarSesion">Perfil</button>
+                    <!--<button class="nav-link active" style="color: rgb(51, 255, 0); font-size: 22px;" aria-current="page" data-bs-toggle="modal" data-bs-target="#modalIniciarSesion">Perfil</button>-->
+                    
+									<a class="nav-link active" style="color: rgb(51, 255, 0); font-size: 22px;" aria-current="page" href="<?php echo $ruta . 'components/CrearCuenta.php'; ?>" >Perfil</a>
+                    
                 </li>
             </ul>
             <form class="d-flex" role="search">
