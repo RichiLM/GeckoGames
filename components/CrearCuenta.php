@@ -20,7 +20,7 @@
 
 <?php require($ruta . 'layouts/nav.php'); ?>
   
-<div class="container">
+<div class="container mt-5">
     <div class="row d-flex justify-content-center align-items-center ">
         <aside class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
             <section class="gradient-custom">

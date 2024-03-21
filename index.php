@@ -1,6 +1,7 @@
 <?php
 // Esto es para que cargue las rutas del nav antes de abrir la pagina
 $ruta = '';
+session_start();
 
 ?>
 <!DOCTYPE html>
@@ -107,50 +108,45 @@ $ruta = '';
         </div>
       </div>
     </div>
-   
+
     <!-- Modal -->
-<div class="modal fade" id="modalIniciarSesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content" style="background-color: #202124;">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel" style="color: rgb(51, 255, 0);">Iniciar sesion</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-         <form action="../php/login.php" method="post">
-             <div class="form-outline form-white mb-4">
-        <?php if (isset($_GET['error'])) { ?>
-             <p class="error"><?php echo $_GET['error']; ?></p>
-        <?php } ?>
-             <label class="form-label" for="usuario" style="color: white;">Usuario</label>
-              <input type="text" style="text-align: center; " name="uname" placeholder="Usuario" class="form-control form-control-lg" />
-              
+    <div class="modal fade" id="modalIniciarSesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="background-color: #202124;">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel" style="color: rgb(51, 255, 0);">Iniciar sesion</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form action="../php/login.php" method="post">
+            <div class="modal-body">
+              <div class="form-outline form-white mb-4">
+                <?php if (isset($_GET['error'])) { ?>
+                  <p class="error"><?php echo $_GET['error']; ?></p>
+                <?php } ?>
+                <label class="form-label" for="usuario" style="color: white;">Usuario</label>
+                <input type="text" style="text-align: center; " name="uname" placeholder="Usuario" class="form-control form-control-lg" />
               </div>
-							<div class="form-outline form-white mb-4">
-             <label class="form-label" for="password" style="color: white;">Contraseña</label>
-              <input type="password" style="text-align: center;" name="password" placeholder="Contraseña" class="form-control form-control-lg" />
-              
+              <div class="form-outline form-white mb-4">
+                <label class="form-label" for="password" style="color: white;">Contraseña</label>
+                <input type="password" style="text-align: center;" name="password" placeholder="Contraseña" class="form-control form-control-lg" />
               </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-between" style="background-color: black;">
+              <p class="small pb-lg-2 me-lg-auto"><a class="text-white-50" href="#!">Olvidaste tu contraseña?</a></p>
+              <a href="https://fabulous-frangollo-15319d.netlify.app/" target="_blank">
+                <button type="button" class="btn  mx-auto" data-bs-dismiss="modal" style="color:black;">Hola</button>
+              </a>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary" style="background-color:rgb(51, 255, 0); color: black;" type="submit">Iniciar sesión</button>
+              <p class="small pb-lg-2 me-lg-auto"><a class="text-white-50" href="#!">Crear cuenta</a></p>
+            </div>
           </form>
-     
+
+        </div>
       </div>
-  <div class="modal-footer d-flex justify-content-between" style="background-color: black;">
-    <p class="small pb-lg-2 me-lg-auto"><a class="text-white-50" href="#!">Olvidaste tu contraseña?</a></p>
-    <a href="https://fabulous-frangollo-15319d.netlify.app/" target="_blank">
-    <button type="button" class="btn  mx-auto" data-bs-dismiss="modal" style="color:black;">Hola</button>
-		</a>
-    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-    <button type="button" class="btn btn-primary" style="background-color:rgb(51, 255, 0); color: black;" type="submit">Iniciar sesión</button>
-    <p class="small pb-lg-2 me-lg-auto"><a class="text-white-50" href="#!">Crear cuenta</a></p>
-</div>
-
-
-
     </div>
-  </div>
-</div>
 
- <!-- Modal -->                                    
+    <!-- Modal -->
   </div>
   <?php
   require($ruta .  'layouts/footer.php');

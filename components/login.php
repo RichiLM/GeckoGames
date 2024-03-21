@@ -13,8 +13,8 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
         return $data;
     }
 
-    $uname = validate($_POST['uname']);
-    $pass = validate($_POST['password']);
+    $uname = $_POST['uname'];
+    $pass = $_POST['password'];
 
     if (empty($uname) || empty($pass)) {
         // Redireccionar con mensaje de error si el usuario o la contraseña están vacíos
@@ -22,21 +22,21 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
         exit();
     } else {
         // hashing de la contraseña
-        $pass = md5($pass);
 
         // Consultar la base de datos para verificar las credenciales
-        $sql = "SELECT * FROM usuarios WHERE usuario='$uname' AND password='$pass'";
+        $sql = "SELECT * FROM usuarios WHERE usuario='$uname'";
         $result = mysqli_query($conexion, $sql);
 
-        if (mysqli_num_rows($result) === 1) {
+        $sqlPass = mysqli_fetch_assoc($result);
+        $contraBD = $sqlPass['password'];
+
+        if (password_verify($pass, $contraBD)) {
             // Iniciar sesión y redireccionar a la página deseada
             $_SESSION['usuario'] = $uname;
             header("Location: Perfil.php");
-            exit();
         } else {
             // Redireccionar con mensaje de error si las credenciales son incorrectas
-            header("Location: CrearCuenta.php?error=Usuario o contraseña incorrectos");
-            exit();
+            header("Location: CrearCuenta.php?error=Usuario o contraseña incorrectos{$pass} <<<< {$contraBD}");
         }
     }
 } else {

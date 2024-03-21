@@ -24,9 +24,8 @@ if (isset($_POST['uname']) && isset($_POST['password']) && isset($_POST['direcci
 		header("Location: CrearCuenta.php?error=Todos los campos son obligatorios&$user_data");
 	    exit();
 	} else {
-
 		// hashing the password
-        $pass = md5($pass);
+        $pass = password_hash($pass, PASSWORD_DEFAULT);
 
 	    $sql = "SELECT * FROM usuarios WHERE usuario='$uname' ";
 		$result = mysqli_query($conexion, $sql);

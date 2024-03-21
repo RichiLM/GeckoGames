@@ -1,6 +1,7 @@
 <?php
 // Esto es para que cargue las rutas del nav antes de abrir la página
 $ruta = '../';
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +17,9 @@ $ruta = '../';
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<?php require($ruta . 'layouts/nav.php'); ?>
+<?php require($ruta . 'layouts/nav.php'); 
+echo $_SESSION['usuario'];
+?>
 <img src="../src/enconstruccion.gif" alt="">
 	
 </body>
