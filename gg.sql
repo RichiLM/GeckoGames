@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-03-2024 a las 23:07:05
+-- Tiempo de generación: 21-03-2024 a las 04:25:54
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -24,6 +24,22 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `productos`
+--
+
+CREATE TABLE `productos` (
+  `id_producto` int(11) NOT NULL,
+  `nombre_producto` varchar(50) NOT NULL,
+  `descripcion` varchar(200) NOT NULL,
+  `imagen` varchar(100) NOT NULL,
+  `categoria` varchar(20) NOT NULL,
+  `precio` decimal(8,2) NOT NULL,
+  `stock` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `usuarios`
 --
 
@@ -32,13 +48,19 @@ CREATE TABLE `usuarios` (
   `usuario` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
   `direccion` varchar(50) NOT NULL,
-  `telefono` int(50) NOT NULL,
-  `email` varchar(50) NOT NULL
+  `telefono` varchar(10) NOT NULL,
+  `email` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `productos`
+--
+ALTER TABLE `productos`
+  ADD PRIMARY KEY (`id_producto`);
 
 --
 -- Indices de la tabla `usuarios`
@@ -51,10 +73,16 @@ ALTER TABLE `usuarios`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `productos`
+--
+ALTER TABLE `productos`
+  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

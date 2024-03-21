@@ -2,7 +2,11 @@
 // Esto es para que cargue las rutas del nav antes de abrir la pagina
 $ruta = '../';
 session_start();
+require "conexion.php";
+$conexion = conexion();
 
+$queryProductos = "SELECT * FROM productos";
+$sqlProductos = mysqli_query($conexion, $queryProductos);
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -33,151 +37,37 @@ session_start();
   </div>
 
   <div class="container mt-4">
+    <?php
+    if (mysqli_num_rows($sqlProductos) > 0) {
+      echo '<h2 class="titulo display-1 text-uppercase my-5 text-center" style="font-size: 40px;">Nuestros productos</h2>';
+    } else {
+      echo '<h2 class="titulo display-1 text-uppercase my-5 text-center" style="font-size: 40px;">No hay productos</h2>';
+    }
+    ?>
     <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <div class="card h-100">
-          <img src="../assets/Gabinetes/G1.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Gabinete GGC1</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="../assets/Audifonos/A1.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Gecko Bass WW</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
+      <?php
+
+      while ($traerProductos = mysqli_fetch_assoc($sqlProductos)) {
+        $nombreProducto = $traerProductos['nombre_producto'];
+        $descripcionProducto = $traerProductos['descripcion'];
+        $imagenProducto = $traerProductos['imagen'];
+        $precioProducto = $traerProductos['precio'];
+      ?>
+        <div class="col">
+          <div class="card h-100">
+            <img src="<?php echo $ruta . $imagenProducto; ?>" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><?php echo $nombreProducto; ?></h5>
+              <p class="card-text"><?php echo $descripcionProducto; ?></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary"><b>Precio: </b><?php echo $precioProducto; ?></small>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="../assets/Mouse/M1.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">GG One Click</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="../assets/Teclados/T1.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Teclado GGK-1</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="../assets/Controles/C1.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Control G-Super Light</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="../assets/Mouse/M2.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Mouse G-Light Speed</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="../assets/Gabinetes/G2.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Gabinete G-Armor</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="../assets/Teclados/T2.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Teclado GG Thunder B</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="../assets/Teclados/T3.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Teclado GG Thunder W</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="../assets/Controles/C2.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Control GG Rush W</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="../assets/Mouse/M3.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Mouse G-203</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="../assets/Gabinetes/G3.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Gabinete NiGGa</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
-          </div>
-        </div>
-      </div>
+      <?php
+      }
+      ?>
     </div>
   </div>
 
