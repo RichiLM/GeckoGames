@@ -20,22 +20,27 @@
                 </li>
                 <li class="nav-item">
                     <!--<button class="nav-link active" style="color: rgb(51, 255, 0); font-size: 22px;" aria-current="page" data-bs-toggle="modal" data-bs-target="#modalIniciarSesion">Perfil</button>-->
-                    <a class="nav-link active" style="color: rgb(51, 255, 0); font-size: 22px;" aria-current="page" href="<?php echo $ruta . 'components/CrearCuenta.php'; ?>">Perfil</a>
+                    <?php
+                    if (isset($_SESSION['usuario'])) {
+                    ?>
+                        <a class="nav-link active" style="color: rgb(51, 255, 0); font-size: 22px;" aria-current="page" href="<?php echo $ruta . 'components/Perfil.php'; ?>">Perfil</a>
+                    <?php
+                    } else {
+                    ?>
+                        <a class="nav-link active" style="color: rgb(51, 255, 0); font-size: 22px;" aria-current="page" href="<?php echo $ruta . 'components/CrearCuenta.php'; ?>">Perfil</a>
+                    <?php
+                    }
+                    ?>
+
                 </li>
                 <li>
                     <?php
                     if (isset($_SESSION['usuario'])) {
                     ?>
-                        <form class="d-flex" role="search">
-                            <input class="btn btn-danger" style="color: black; font-size: 20px;" type="submit" name="cerrarS" value="Cerrar Sesión">
+                        <form action="<?php echo $ruta . 'components/cerrarSesion.php'; ?>">
+                            <input class="btn btn-outline-danger" style="font-size: 20px;" type="submit" name="cerrarS" value="Cerrar Sesión">
                         </form>
                     <?php
-                    }
-
-                    if (isset($_POST["cerrarS"])) {
-                        session_unset();
-                        session_destroy();
-                        header("Location: ../index.php");
                     }
                     ?>
                 </li>
