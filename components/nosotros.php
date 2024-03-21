@@ -27,7 +27,7 @@ session_start();
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm">
-        <img src="../assets/Poster/somos.jpg" class="d-block w-100" alt="...">
+        <img class="img-fluid" src="../assets/Poster/somos.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
     <div class="row">
@@ -37,12 +37,12 @@ session_start();
     </div>
     <div class="row text-center mx-3 mt-5 mb-5">
       <div class="col-sm">
-        <h2 class=" display-1 text-uppercase my-auto" style="color: white; font-size: 28px;">Somos una marca que ofrece perifericos gamer de un alto desempeño, diseño original y sobre todo la mas alta calidad para que puedas sacar tu maximo potencial en cada partida</h2>
+        <h2 class="display-1 text-uppercase my-auto" style="color: white; font-size: 28px;">Somos una marca que ofrece perifericos gamer de un alto desempeño, diseño original y sobre todo la mas alta calidad para que puedas sacar tu maximo potencial en cada partida</h2>
       </div>
     </div>
     <div class="row">
       <div class="col-sm">
-        <img src="../assets/Poster/Poster2.jpg" class="d-block w-100" alt="...">
+        <img class="img-fluid" src="../assets/Poster/Poster2.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
     <div class="row">
@@ -50,39 +50,39 @@ session_start();
         &nbsp;
       </div>
     </div>
-   <div class="row mx-3 mt-5 mb-5 align-items-center">
-  <div class="col-sm-6 mb-4">
-    <h2 class="display-1 text-uppercase my-auto" style="color: white; font-size: 28px;">En Gecko Gaming nos preocupamos por cada detalle, así que mires por donde mires nuestros productos, siempre contarán con los mejores acabados</h2>
-  </div>
-  <div class="col-sm-5">
-    <img src="../assets/Mouse/M8.png" width="500" alt="">
-  </div>
-</div>
-<div class="row mx-3 mt-5 mb-5 align-items-center">
- <div class="col-sm-6 mb-4">
-<img src="../assets/Teclados/Switch.png" width="500" alt="">
-  </div>
-  <div class="col-sm-6 mb-4">
-    <h2 class="display-1 text-uppercase my-auto" style="color: white; font-size: 28px;">Pero sabemos que no solo importa lo de afuera y por eso cada uno de nuestros productos cuenta con con los mejores componentes </h2>
-  </div>
-</div>
-<div class="row">
-  <div class="col-sm text-center">
-    <h2 class="titulo display-1 text-uppercase my-auto mt-4 mb-4">ES POR ESO QUE</h2>
-  </div>
-</div>
+    <div class="row mx-3 mt-5 mb-5 d-flex align-items-center">
+      <div class="col-sm col-md-6 mb-4">
+        <h2 class="display-1 text-uppercase my-auto" style="color: white; font-size: 28px;">En Gecko Gaming nos preocupamos por cada detalle, así que mires por donde mires nuestros productos, siempre contarán con los mejores acabados</h2>
+      </div>
+      <div class="col-sm col-md-6 d-flex justify-content-center">
+        <img class="img-fluid" src="../assets/Mouse/M8.png" width="600" alt="">
+      </div>
+    </div>
+    <div class="row mx-3 mt-5 mb-5 d-flex align-items-center">
+      <div class="col-sm col-md-6 mb-4 d-flex justify-content-center">
+        <img class="img-fluid" src="../assets/Teclados/Switch.png" width="600" alt="">
+      </div>
+      <div class="col-sm col-md-6 mb-4">
+        <h2 class="display-1 text-uppercase my-auto" style="color: white; font-size: 28px;">Pero sabemos que no solo importa lo de afuera y por eso cada uno de nuestros productos cuenta con con los mejores componentes </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm text-center">
+        <h2 class="titulo display-1 text-uppercase my-auto mt-4 mb-4">ES POR ESO QUE</h2>
+      </div>
+    </div>
 
-<div class="row">
-  <div class="col-sm text-center">
-    <img src="../assets/WP/P4.gif" class="d-block w-100 mt-4 mb-4" alt="...">
-  </div>
-</div>
+    <div class="row">
+      <div class="col-sm text-center">
+        <img class="img-fluid" src="../assets/WP/P4.gif" class="d-block w-100 mt-4 mb-4" alt="...">
+      </div>
+    </div>
 
-<div class="row">
-  <div class="col-sm text-center">
-    <h2 class="titulo display-1 text-uppercase my-auto mt-4 mb-4">ES TÚ MEJOR OPCIÓN</h2>
-  </div>
-</div>
+    <div class="row">
+      <div class="col-sm text-center">
+        <h2 class="titulo display-1 text-uppercase my-auto mt-4 mb-4">ES TÚ MEJOR OPCIÓN</h2>
+      </div>
+    </div>
 
 
 
