@@ -24,6 +24,7 @@ if (isset($_POST['uname']) && isset($_POST['password']) && isset($_POST['direcci
 		header("Location: CrearCuenta.php?error=Todos los campos son obligatorios&$user_data");
 	    exit();
 	} else {
+
 		// hashing the password
         $pass = password_hash($pass, PASSWORD_DEFAULT);
 
@@ -37,17 +38,24 @@ if (isset($_POST['uname']) && isset($_POST['password']) && isset($_POST['direcci
            $sql2 = "INSERT INTO usuarios(usuario, password, direccion, telefono, email) VALUES('$uname', '$pass', '$direccion', '$telefono', '$email')";
            $result2 = mysqli_query($conexion, $sql2);
            if ($result2) {
-           	 header("Location: CrearCuenta.php?success=Tu cuenta ha sido creada de manera correcta");
-	         exit();
-           } else {
-	           	header("Location: CrearCuenta.php?error=Lo sentimos, ha ocurrido un error&$user_data");
-		        exit();
-           }
+			// Crear sesión para mantener los datos del usuario
+			$_SESSION['usuario'] = $uname;
+			$_SESSION['direccion'] = $direccion;
+			$_SESSION['telefono'] = $telefono;
+			$_SESSION['email'] = $email;
+
+			// Redirigir a la página de perfil
+			header("Location: perfil.php");
+			exit();
+		} else {
+			 header("Location: CrearCuenta.php?error=Lo sentimos, ha ocurrido un error al crear la cuenta");
+			 exit();
 		}
-	}
-	
+	 }
+ }
+ 
 } else {
-	header("Location: ../Practica14/TiendaOnline.php");
-	exit();
+ header("Location: ../index.php");
+ exit();
 }
 ?>

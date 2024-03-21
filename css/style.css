@@ -23,9 +23,33 @@ body {
 }
 
 .carousel-item img {
-    width: 100%; /* Mantenemos el ancho al 100% del contenedor */
-    height: auto; /* Mantenemos la proporción de aspecto */
-    max-width: 1000px; /* Establecemos un ancho máximo */
-    max-height: 1000px; /* Establecemos una altura máxima */
+    width: 100%;
+    /* Mantenemos el ancho al 100% del contenedor */
+    height: auto;
+    /* Mantenemos la proporción de aspecto */
+    max-width: 1000px;
+    /* Establecemos un ancho máximo */
+    max-height: 1000px;
+    /* Establecemos una altura máxima */
 }
 
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #000000;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right bottom, rgb(0, 0, 0), rgb(0, 0, 0));
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right bottom, rgb(0, 0, 0), rgb(0, 0, 0))
+}
+
+.fa-facebook-f {
+    color: rgb(51, 255, 0); 
+}
+.fa-twitter {
+    color: rgb(51, 255, 0); 
+}
+.fa-instagram {
+    color: rgb(51, 255, 0); 
+}
