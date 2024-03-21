@@ -45,7 +45,7 @@ if (isset($_POST['uname']) && isset($_POST['password']) && isset($_POST['direcci
 			$_SESSION['email'] = $email;
 
 			// Redirigir a la página de perfil
-			header("Location: perfil.php");
+			header("Location: Perfil.php");
 			exit();
 		} else {
 			 header("Location: CrearCuenta.php?error=Lo sentimos, ha ocurrido un error al crear la cuenta");

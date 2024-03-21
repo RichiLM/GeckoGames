@@ -36,7 +36,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
             header("Location: Perfil.php");
         } else {
             // Redireccionar con mensaje de error si las credenciales son incorrectas
-            header("Location: CrearCuenta.php?error=Usuario o contraseña incorrectos{$pass} <<<< {$contraBD}");
+            header("Location: CrearCuenta.php?error=Usuario o contraseña incorrectos");
         }
     }
 } else {

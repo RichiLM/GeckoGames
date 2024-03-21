@@ -44,7 +44,7 @@
                                     <label class="form-label" for="password">Contraseña</label>
                                 </div>
 
-                                <p class="small mb-4 pb-lg-2"><a class="text-white-50" href="#!">Olvidaste tu contraseña?</a></p>
+                                <!-- <p class="small mb-4 pb-lg-2"><a class="text-white-50" href="#!">Olvidaste tu contraseña?</a></p> -->
 
                                 <button class="btn  btn-lg px-3" type="submit" style="background-color: rgb(51, 255, 0); color: black;">Ingresar</button>
                             </form>

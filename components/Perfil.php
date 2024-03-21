@@ -1,10 +1,22 @@
 <?php
 session_start();
+require "conexion.php";
+$conexion = conexion();
+
 if (!isset($_SESSION['usuario'])) {
   header("Location: login.php"); // Redirigir a la página de inicio de sesión si no está autenticado
   exit();
 }
 $uname = $_SESSION['usuario'];
+
+$queryPerfil = "SELECT * FROM usuarios WHERE usuario='$uname'";
+$queryPerfilsi = mysqli_query($conexion, $queryPerfil);
+
+$datosPerfil = mysqli_fetch_assoc($queryPerfilsi);
+$_SESSION['direccion'] = $datosPerfil['direccion'];
+$_SESSION['telefono'] = $datosPerfil['telefono'];
+$_SESSION['email'] = $datosPerfil['email'];
+
 $direccion = $_SESSION['direccion'];
 $telefono = $_SESSION['telefono'];
 $email = $_SESSION['email'];
@@ -36,7 +48,7 @@ $ruta = '../';
         <div class="col col-lg-7 mb-4 mb-lg-0">
           <div class="card mb-3" style="border-radius: .5rem; border-color:rgb(51, 255, 0)">
             <div class="row g-0">
-              <div class="col-md-4 gradient-custom text-center" style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem; color:rgb(51, 255, 0);">
+              <div class="col-md-4 gradient-custom text-center" style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem; color:rgb(51, 255, 0); background-color: black;">
                 <img src="../assets/Logos/YAFINAL.png" alt="Avatar" class="img-fluid my-4" style="width: 150px;" />
                 <h1><?php echo $uname; ?></h1>
               </div>
