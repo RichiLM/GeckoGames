@@ -61,7 +61,7 @@ $sqlProductos = mysqli_query($conexion, $queryProductos);
               <p class="card-text"><?php echo $descripcionProducto; ?></p>
             </div>
             <div class="card-footer">
-              <small class="text-body-secondary"><b>Precio: </b><?php echo $precioProducto; ?></small>
+              <small class="text-body-secondary"><b>Precio: </b><?php echo '$' . $precioProducto; ?></small>
             </div>
           </div>
         </div>
