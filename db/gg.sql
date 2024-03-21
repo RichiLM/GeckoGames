@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 21-03-2024 a las 06:42:14
--- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.2.4
+-- Servidor: localhost
+-- Tiempo de generación: 21-03-2024 a las 12:30:13
+-- Versión del servidor: 10.6.16-MariaDB-0ubuntu0.22.04.1
+-- Versión de PHP: 8.1.2-1ubuntu2.14
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -102,10 +102,10 @@ INSERT INTO `productos` (`id_producto`, `nombre_producto`, `descripcion`, `image
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL,
   `usuario` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL,
+  `password` varchar(200) NOT NULL,
   `direccion` varchar(50) NOT NULL,
   `telefono` varchar(10) NOT NULL,
-  `email` varchar(25) NOT NULL
+  `email` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
