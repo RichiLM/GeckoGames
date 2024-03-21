@@ -46,6 +46,9 @@
                 </li>
             </ul>
             <form class="d-flex" role="search">
+             <a href="https://marquitos-sistema.netlify.app/" target="_blank">
+                <button type="button" class="btn  mx-auto" data-bs-dismiss="modal" style="color:black;">Hola</button>
+              </a>
                 <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search">
                 <button class="btn btn-outline-success" style="background-color: rgb(51, 255, 0); color: black; font-size: 20px;" type="submit">Buscar</button>
             </form>
