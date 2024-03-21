@@ -8,6 +8,5 @@ insert into productos values
 (NULL, 'Gabinete Nova Crystal', 'Gabinete con iluminación LED RGB y soporte para tarjetas gráficas largas', 'assets/Gabinetes/G7.png', 'Gabinetes', 1799.00, 22),
 (NULL, 'Gabinete X-Firestorm', 'Gabinete con diseño aerodinámico y compartimentos modulares', 'assets/Gabinetes/G8.png', 'Gabinetes', 2120.00, 20),
 (NULL, 'Gabinete Horizon Blitz', 'Gabinete de torre media con múltiples puntos de montaje para unidades', 'assets/Gabinetes/G9.png', 'Gabinetes', 1690.50, 25),
-(NULL, 'Gabinete Phoenix Fury', 'Gabinete de alta resistencia con construcción de acero de grado industrial', 'assets/Gabinetes/G10.png', 'Gabinetes', 3250.00, 17),
-(NULL, 'Gabinete Shadow Knight', 'Gabinete con diseño minimalista y filtros de polvo extraíbles', 'assets/Gabinetes/G11.png', 'Gabinetes', 1950.00, 21);
+(NULL, 'Gabinete Phoenix Fury', 'Gabinete de alta resistencia con construcción de acero de grado industrial', 'assets/Gabinetes/G10.png', 'Gabinetes', 3250.00, 17);
 
